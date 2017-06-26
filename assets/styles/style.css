@@ -89,12 +89,14 @@ header.inactive h2 {
   width: 45%;
 
   background: #FFF;
-  box-shadow: 2px 2px 6px 4px rgba(0, 20, 50, .1);
+  box-shadow: 2px 2px 6px 5px rgba(0, 20, 50, .12);
 }
 
 .content-row article:nth-of-type(2) {
   width: 55%;
   color: #e0eafe;
+
+  border-top: 12px solid #405172;
 }
 
 article h4 {
