@@ -1,13 +1,9 @@
 (function(window, document) {
 
-  var inactiveElements = [
-    document.querySelector('.logo'),
-    document.querySelector('header'),
-  ];
-
-
   window.onload = function() {
-    inactiveElements.forEach(function(elem) { 
+    var inactiveElements = document.querySelectorAll('.inactive');
+
+    Array.prototype.forEach.call(inactiveElements, function(elem) { 
       elem.classList.remove('inactive');
     });
   }

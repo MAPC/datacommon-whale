@@ -36,13 +36,15 @@ h3 {
 
 .vertical-center {
   position: absolute;
-  top: 40%;
+  top: 48%;
   left: 0;
   right: 0;
   transform: translateY(-50%);
 }
 
 header {
+  top: 40% !important;
+
   width: 85%;
   margin: 0 auto;
 
@@ -59,9 +61,6 @@ header h1 {
 
   font-size: 40px;
   font-weight: 700;
-
-  opacity: 1;
-  transition: opacity .2s;
 }
 
 header h2 {
@@ -79,7 +78,6 @@ header h2 {
   transition: opacity .4s, left .3s;
 }
 
-header.inactive h1 { opacity: 0; }
 header.inactive h2 {
   left: -30px;
   opacity: 0;
@@ -96,14 +94,78 @@ header.inactive h2 {
 
 .content-row article:nth-of-type(2) {
   width: 55%;
+  color: #e0eafe;
+}
+
+article h4 {
+  font-weight: 300;
 }
 
 .resources-list {
+  margin-top: 0;
+
+  width: 65%;
+  padding: 0;
+  margin: 0 auto;
+
   list-style: none;
+  opacity: 1;
+  transform: translateZ(0) translateY(-50%);
+  transition: opacity .3s, margin-top .4s;
+}
+
+.resources-list.inactive {
+  margin-top: 30px;
+
+  opacity: 0;
+}
+
+.resources-list .contact {
+  width: 85%;
+  margin: 31px auto 0;
+
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.resources-list .contact > a {
+  color: #e0eafe;
+  font-style: italic;
 }
 
 .resource {
-  
+  padding: 10px 0;
+
+  border-top: 1px solid #fff;
+}
+
+.resource:first-of-type { border-top: none; }
+
+.resource a {
+  left: 0;
+
+  color: #e0eafe;
+  text-decoration: none;
+
+  transition:  color .2s, left .2s;
+}
+
+.resource a:hover {
+  left: 3px;
+
+  color: #FFF;
+
+  transition:  color .2s, left .2s;
+}
+
+.resource h3 {
+  text-align: left;
+  font-weight: 400;
+}
+
+.resource p {
+  text-align: justify;
+  font-weight: 100;
 }
 
 footer {
@@ -118,8 +180,14 @@ footer .logo {
   width: auto;
   height: 35px;
 
+  opacity: .8;
   transform: translateZ(0);
-  transition: bottom .6s;
+  transition: bottom .7s, opacity .2s;
+}
+
+footer .logo:hover { 
+  opacity: 1; 
+  transition: bottom .7s, opacity .2s;
 }
 
 footer .logo.inactive {
