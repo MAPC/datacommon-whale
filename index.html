@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  
 
   <title>DataCommon - Coming Soon</title>
 
@@ -17,7 +18,10 @@
       <article>
         <header class="vertical-center inactive">
           <h1>Thank you for visiting the Metro Boston Data Common!</h1>
-          <h2>This site is currently under redevelopment.</h2>
+          <div class="sub-header">
+            <img src="/assets/images/wrench.svg">
+            <h2>This site is currently under redevelopment.</h2>
+          </div><!--/. sub-header -->
         </header>
       </article>
 
@@ -77,5 +81,8 @@
   <!-- scripts -->
   <script src="/assets/scripts/script.js"></script>
 
+  <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
+  //]]></script>
 </body>
 </html>
